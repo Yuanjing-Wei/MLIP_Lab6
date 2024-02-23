@@ -38,4 +38,5 @@ def feature_target_sample(housing_data_sample):
 def test_data_split(feature_target_sample):
     return_tuple = data_split(*feature_target_sample)
     # TODO test if the length of return_tuple is 4
-    raise NotImplemented
+    assert len(return_tuple) == 4, "The return value must be a tuple of length 4."
+    
